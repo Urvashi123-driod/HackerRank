@@ -1,0 +1,50 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int i =sc.nextInt();
+        for(int j = 0;j<i;j++)
+        {
+            String s = sc.next();
+            String even = " ";
+            String odd = " ";
+            for(int k = 0;k<s.length();k++)
+            {
+                if(k%2==0)
+                {
+                    even = even + s.charAt(k);
+                }
+                else
+                {
+                    odd = odd + s.charAt(k);
+                }
+            }
+            System.out.println(even + " " + odd);
+        /*int n = sc.nextInt();sc.nextLine();
+        String[] string = new String[n];
+        for (int i = 0;i<n;i++)
+        {
+            string[i] = sc.nextLine();
+        }
+        for (int i =0;i<n;i++)
+        {
+            char[] array = string[i].toCharArray();
+            for (int j =0;j<array.length;j+=2)
+            {
+                System.out.print(array[j]);
+            }
+            System.out.print(" ");
+            for (int k =1;k<array.length;k+=2)
+            {
+                System.out.print(array[k]);
+            }
+            System.out.println();
+        }*/
+
+
+    }
+}
