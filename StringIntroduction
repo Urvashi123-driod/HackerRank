@@ -1,0 +1,41 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String s1 = scanner.nextLine();
+        String s2 = scanner.nextLine();
+        int num =0,num1 =0,num2 =0;
+        for (int i = 0;i<s1.length();i++)
+        {
+        if (s1.charAt(i) != ' ')
+          {
+              num++;
+          }
+        }
+        for (int j =0;j<s2.length();j++)
+        {
+            if (s2.charAt(j) != ' ')
+            {
+                num1++;
+            }
+        }
+        num2 = num + num1;
+        System.out.println(num2);
+      
+        if (s1.compareTo(s2) > 0)
+        {
+            System.out.println("Yes");
+        }
+        else
+        {
+            System.out.println("No");
+        }
+        
+    String string = s1.substring(0,1).toUpperCase() + s1.substring(1);
+    String string2 = s2.substring(0,1).toUpperCase() + s2.substring(1);
+        System.out.println(string + " " + string2);
+    }
+}
